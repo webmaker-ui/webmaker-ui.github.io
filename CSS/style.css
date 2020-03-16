@@ -382,13 +382,13 @@ ai:visited{
 /*  section one animation text's content----------------------------------------*/
 
 .sectionOne{
-	width: 100%;
+	width: 100% !important;
 	height: 770px;
 	position: relative;
 	display: block;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover !important;
 	background: linear-gradient(#00000065, #00000065), linear-gradient(#00000065, #00000065);
 	vertical-align: -webkit-baseline-middle;
 }
