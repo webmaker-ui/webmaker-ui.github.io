@@ -35,7 +35,7 @@ ai:visited{
 /* Navbar section */
 
 .nav {
-    width: 100%;
+    width: 100% aut0;
     height: 65px;
     position: fixed;
     line-height: 65px;
@@ -47,6 +47,7 @@ ai:visited{
     float: left;
     width: auto;
     height: auto;
+	padding-left: 0;
 }
 
 .nav div.logo a {
