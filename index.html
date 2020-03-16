@@ -17,21 +17,32 @@
 
 <!------------------  navbar's content start -------------------->
 <header> 
-<div class="container mainMenu" style="max-width: 1350px;" > 
-<div class="row">
-<div class="col-md-4">
-<div class="myLogo">wEbmaker.com</div>
-</div>
-<div class="col-md-8">
-<ul>
+
+
+
+<nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">wEbmaker.com</a></div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
     <li id="homeContent"><a class="scroll" href="#">Home</a></li>
 	<li id="aboutContent"><a class="scroll" href="#about">About</a></li>
 	<li id="serviceContent"><a class="scroll" href="#service">Services</a></li>
 	<li id="portfolioContent"><a class="scroll" href="#portfolio">Portfolio</a></li>
 	<li id="contactContent"><a class="scroll" href="#contact">Contact</a></li>
-</ul></div>
-</div>
-</div>
+</ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+
+
 </header>
 <!------------------  navbar's content end -------------------->
 
@@ -259,6 +270,7 @@ UX / UI designer, I love to make website, I make every website to the best of my
 <script type="text/javascript" src="jQuery/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>	
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
 <script type="text/javascript">
 AOS.init({
     duration: 800, 
@@ -304,6 +316,22 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
 </script>
 </body>
 </html>
