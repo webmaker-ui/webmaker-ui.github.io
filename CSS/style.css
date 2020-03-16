@@ -39,7 +39,7 @@ ai:visited{
 .mainMenu {
     list-style: none;
     margin-bottom: 0;
-    max-width: 1350px;
+    max-width: 100%;
     position: fixed;
     right: 0;
 	color: #fff;
@@ -456,7 +456,7 @@ list-type-ulli {
   margin: 0;
   padding: 0; }
 .main {
-    position: absolute;
+    position: relative;
     top: -111px;
 }
 input, select, textarea {
