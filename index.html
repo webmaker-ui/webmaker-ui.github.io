@@ -17,32 +17,21 @@
 
 <!------------------  navbar's content start -------------------->
 <header> 
-
-
-
-<nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="#">wEbmaker.com</a></div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
+<div class="container mainMenu" style="max-width: 1350px;" > 
+<div class="row">
+<div class="col-md-4">
+<div class="myLogo">wEbmaker.com</div>
+</div>
+<div class="col-md-8">
+<ul>
     <li id="homeContent"><a class="scroll" href="#">Home</a></li>
 	<li id="aboutContent"><a class="scroll" href="#about">About</a></li>
 	<li id="serviceContent"><a class="scroll" href="#service">Services</a></li>
 	<li id="portfolioContent"><a class="scroll" href="#portfolio">Portfolio</a></li>
 	<li id="contactContent"><a class="scroll" href="#contact">Contact</a></li>
-</ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
-
-
-
+</ul></div>
+</div>
+</div>
 </header>
 <!------------------  navbar's content end -------------------->
 
@@ -95,9 +84,10 @@ UX / UI designer, I love to make website, I make every website to the best of my
 <div class="container">
 <div class="row"> 
 <div class="col-md-12 sectionThreeTitle">
+<h1>
 <span><h4 data-aos="fade-down-left">What I Do!</h4></span>
-<h1 data-aos="fade-left">Services</h1>
-</div>
+<span data-aos="fade-left">Services</span>
+</h1></div>
 <div class="col-lg-4 col-md-6 col-sm-12">
 <div class="serviceContent">
 <h1><i class="far fa-file-code"></i></h1>
@@ -247,7 +237,7 @@ UX / UI designer, I love to make website, I make every website to the best of my
 <div class="row">
 <div class="col-md-6">
 <div class="websiteDescription">
-<h1><a href="#">wEbmaker</a></h1>
+<h1>wEbmaker</h1>
 <h3>Make your own website</h3>
 </div>
 </div>
@@ -269,7 +259,6 @@ UX / UI designer, I love to make website, I make every website to the best of my
 <script type="text/javascript" src="jQuery/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>	
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/scripts.js"></script>
 <script type="text/javascript">
 AOS.init({
     duration: 800, 
@@ -315,22 +304,6 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
-
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $('.nav').addClass('affix');
-                console.log("OK");
-            } else {
-                $('.nav').removeClass('affix');
-            }
-        });
-$('.navTrigger').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
-
-});
 </script>
 </body>
 </html>
