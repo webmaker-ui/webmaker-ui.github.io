@@ -144,7 +144,7 @@ ai:visited{
     .nav div.main_list ul {
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        height: auto;
         right: 0;
         left: 0;
         bottom: 0;
