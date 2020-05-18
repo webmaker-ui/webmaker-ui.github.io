@@ -1,3 +1,4 @@
+
 /*scroll effect navbar function----------------------------------------*/
 window.onscroll = function(){scrollFunction()};
 function scrollFunction(){
@@ -15,7 +16,6 @@ function scrollFunction(){
 }};
 
 /*scroll function----------------------------------------*/
-
 $(document).ready(function() {
 $('.sectionOne').parallax({
 	  imageSrc: "images/cantact.jpg"
@@ -38,6 +38,13 @@ $("#portfolioContent").click(function () {
 $("#contactContent, .myButton").click(function () {
    $("html, body").animate({scrollTop: 3140}, 1000);
    });
+$('.navTrigger').click(function () {
+    $(this).toggleClass('active');
+    console.log("Clicked menu");
+    $("#mainListDiv").toggleClass("show_list");
+    $("#mainListDiv").fadeIn();
+
+});
 });
 
 (function($) {
